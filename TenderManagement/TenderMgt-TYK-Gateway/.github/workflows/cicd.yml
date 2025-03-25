@@ -1,0 +1,22 @@
+name: gateway
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH to remote VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.HOST_USERNAME }}
+          password: ${{ secrets.HOST_PASSWORD }}
+          script: |
+            export SERVICE_NAME="TenderMgt-TYK-Gateway"
+            cd /root/
+            ls
+            bash ./Tender-Production-Gateway.sh

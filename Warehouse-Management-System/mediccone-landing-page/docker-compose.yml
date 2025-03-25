@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  mediccone-landing-page:
+    image: evolza/mediccone-landing-page
+    container_name: mediccone-landing-page
+    ports:
+      - "55:80"

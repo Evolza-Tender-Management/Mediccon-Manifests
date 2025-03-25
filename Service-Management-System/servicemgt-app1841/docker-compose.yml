@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  servicemgt-app1841:
+    image: evolza/servicemgt-app1841
+    container_name: servicemgt-app1841
+    ports:
+      - "16841:8888"

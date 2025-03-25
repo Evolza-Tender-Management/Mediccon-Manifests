@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  servicemanagementsystem-ws653:
+    image: evolza/servicemanagementsystem-ws653
+    container_name: servicemanagementsystem-ws653
+    ports:
+      - "16821:80"

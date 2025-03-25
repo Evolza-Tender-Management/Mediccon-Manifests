@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  warehouse-usermgt:
+    image: evolza/warehouse-usermgt
+    container_name: warehouse-usermgt
+    ports:
+      - "9499:9100"

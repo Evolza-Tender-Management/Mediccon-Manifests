@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  warehousemgt-app1057:
+    image: evolza/warehousemgt-app1057
+    container_name: warehousemgt-app1057
+    ports:
+      - "7702:9000"

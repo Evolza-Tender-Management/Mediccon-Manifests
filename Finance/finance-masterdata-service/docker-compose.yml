@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  finance-masterdata-service:
+    image: evolza/finance-masterdata-service
+    container_name: finance-masterdata-service
+    ports:
+      - "14000:8010"

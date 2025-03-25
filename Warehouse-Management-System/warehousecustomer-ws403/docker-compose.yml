@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  warehousecustomer-ws403:
+    image: evolza/warehousecustomer-ws403
+    container_name: warehousecustomer-ws403
+    ports:
+      - "18606:80"

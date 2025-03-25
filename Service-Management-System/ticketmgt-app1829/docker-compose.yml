@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  ticketmgt-app1829:
+    image: evolza/ticketmgt-app1829
+    container_name: ticketmgt-app1829
+    ports:
+      - "16829:8885"
